@@ -1,22 +1,15 @@
-#include "main.h"
+#include <stdio.h>
+int main() {
+	int number;
 
-/**
- * print_number - Prints an integer.
- * @n: The integer to be printed.
- */
+	printf("Enter an integer: ");
 
-void print_number(int n)
-{
-	unsigned int num = n;
+	// reads the user input stores in 'number'
+	scanf("%d", &number);
 
-	if (n < 0)
-	{
-		_putchar('-');
-		num = -num;
-	}
+	// print the 'number'
+	printf("Integer entered by user: %d", number);
 
-	if ((num / 10) > 0)
-		print_number(num / 10);
+	return 0;
 
-	_putchar((num % 10) + '0');
 }
