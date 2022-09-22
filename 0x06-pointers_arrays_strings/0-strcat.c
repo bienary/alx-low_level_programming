@@ -1,25 +1,3 @@
-Task 0.txt
-Who has access
-A
-System properties
-Type
-Text
-Size
-468 bytes
-Storage used
-468 bytes
-Location
-0x06-pointers_arrays_strings
-Owner
-Antony Bahati
-Modified
-12:02 AM by Antony Bahati
-Opened
-11:20 PM by me
-Created
-12:05 AM
-No description
-Viewers can download
 #include "main.h"
 
 /**
