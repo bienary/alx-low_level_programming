@@ -1,11 +1,21 @@
-#include<stdio.h>
-#include<conio.h>
-int main()
+#include "main.h"
+
+/**
+ * print_number - Prints an integer.
+ * @n: The integer to be printed.
+ */
+void print_number(int n)
 {
-    int val;
-    printf("Enter the Value: ");
-    scanf("%d", &val);
-    printf("You entered %d", val);
-    getch();
-    return 0;
+	unsigned int num = n;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		num = -num;
+	}
+
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
